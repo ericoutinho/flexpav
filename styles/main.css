@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #2E333D;
+  background: #F1FAEE;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.button {
+  display: inline-block;
+  padding: .5rem .75rem;
+  border-radius: 3px;
+  font-weight: 500;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.button__orange {
+  background: #F8961E;
+  color: #2E333D;
+}
+
+.button__orange:hover {
+  background: #f9a846;
+  color: #fff;
+}
+
+.container {
+  width: 90vw;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  display: none;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+h3 i {
+  color: #F8961E;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+header {
+  padding: .75rem 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav img {
+  width: 180px;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .75rem;
+}
+
+.hero-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 350px;
+  overflow: hidden;
+  padding: 2rem;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(35%, #2E333D), to(transparent)), url(../assets/flexpav_asfalto.png);
+  background-image: linear-gradient(to right, #2E333D 35%, transparent), url(../assets/flexpav_asfalto.png);
+}
+
+.hero-banner--content {
+  position: relative;
+  color: #fff;
+  width: 50%;
+}
+
+.hero-banner--content h2 {
+  font-size: 2rem;
+}
+
+.card-package {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.card-package img {
+  width: 320px;
+}
+
+.section-use .row {
+  gap: 2.25rem;
+}
+
+.section-use .col {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-use img {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.section-benefits ul {
+  list-style: none;
+  -webkit-columns: 2;
+          columns: 2;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+}
+
+.section-benefits ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: .5rem;
+}
+
+.section-benefits ul li::before {
+  content: '\f00c';
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #F8961E;
+  margin-right: .5rem;
+}
+
+.card-yield {
+  background: #F8961E;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.card-yield p {
+  margin-bottom: 0;
+}
+
+.card-yield--figure {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 400px;
+          flex: 1 0 400px;
+}
+
+.card-yield--figure img {
+  width: 100%;
+}
+
+.card-sustainability {
+  background: #415A77;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.card-sustainability p {
+  margin-bottom: 0;
+}
+
+.card-sustainability--figure {
+  margin-top: -3rem;
+}
+
+.section-questions h2 i {
+  color: #F8961E;
+}
+
+.section-questions input {
+  display: none;
+}
+
+.section-questions input:checked + label {
+  color: #707c94;
+}
+
+.section-questions input:checked + label + p {
+  display: block;
+}
+
+.section-questions ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.section-questions li {
+  padding: 1rem;
+  border-radius: 5px;
+  background: #E4E4E7;
+}
+
+.section-questions label {
+  display: block;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.section-questions label:hover {
+  color: #707c94;
+}
+
+.section-questions label::after {
+  content: '\f078';
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  float: right;
+}
+
+.section-questions p {
+  display: none;
+  padding: .75rem;
+  border-radius: 3px;
+  background: #ececee;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  line-height: 145%;
+}
+
+.section-questions a {
+  color: #F8961E;
+  text-decoration: underline;
+}
+
+.card-services-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  background: #E4E4E7;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-services-project div:first-child {
+  width: 450px;
+}
+
+.card-services-project .image-grid {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  gap: .5rem;
+      grid-template-areas: 'img-a img-b' 'img-a img-c';
+}
+
+.card-services-project .image-grid img:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img-a;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-services-project .image-grid img:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img-b;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-services-project .image-grid img:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: img-c;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-services-rent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #415A77;
+  border-radius: 10px;
+  padding: 10px;
+  padding: 1.5rem;
+}
+
+.card-services-rent--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.card-services-rent .card-services-rent--items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.card-services-rent .card-services-rent--items .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 6px;
+  background: #F1FAEE;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.card-services-rent .card-services-rent--items .item h4 {
+  margin-bottom: 1rem;
+}
+
+.card-services-rent .card-services-rent--items .item p {
+  margin-bottom: 0;
+}
+
+.card-services-rent .card-services-rent--items .item img {
+  width: 160px;
+}
+
+.section-contact {
+  margin-bottom: 3rem;
+}
+
+.section-contact ul {
+  list-style: none;
+}
+
+footer {
+  padding: .75rem 0;
+  background: #415A77;
+  color: #fff;
+  font-size: .9rem;
+}
+
+footer .col:first-child {
+  text-align: start;
+}
+
+footer .col:last-child {
+  text-align: end;
+}
+/*# sourceMappingURL=main.css.map */
