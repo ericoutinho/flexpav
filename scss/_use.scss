@@ -1,0 +1,38 @@
+.section-use {
+
+    h2 {
+        margin-bottom: 2.5rem;
+    }
+
+    .guide {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        &-items {
+            flex: 1;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+
+            h3, p {
+                margin: 0;
+            }
+
+            p {
+                line-height: 125%;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        max-width: 180px;
+    }
+}

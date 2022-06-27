@@ -1,0 +1,62 @@
+.section-questions {
+    h2 i {
+        color: $color-orange;
+    }
+
+    input {
+        display: none;
+    }
+
+    input:checked + label {
+        color: lighten($color-text, 30%);
+    }
+
+    input:checked + label + p {
+        display: block;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    li {
+        padding: 1rem;
+        border-radius: 5px;
+        background: $color-frames;
+    }
+
+    label {
+        display: block;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover {
+            color: lighten($color-text, 30%);
+        }
+
+        &::after {
+            content: '\f078';
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            float: right;
+        }
+    }
+
+    p {
+        display: none;
+        padding: .75rem;
+        border-radius: 3px;
+        background: lighten($color-frames, 3%);
+        margin-top: 1rem;
+        margin-bottom: 0;
+        line-height: 145%;
+    }
+
+    a {
+        color: $color-orange;
+        text-decoration: underline;
+    }
+}

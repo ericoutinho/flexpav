@@ -1,0 +1,27 @@
+.card-sustainability {
+    background: $color-marineblue;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    &--figure {
+        margin-top: -3rem;
+
+        @include mobile {
+            margin: 0 auto;
+            width: 80%;
+        }
+    }
+}

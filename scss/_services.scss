@@ -1,0 +1,25 @@
+.servicos {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: $color-frames;
+    border-radius: 10px;
+    padding: 1.5rem;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    &-coluna {
+        flex: 1;
+
+        img {
+            width: 100%;
+            min-height: 180px;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 6px;
+            margin-bottom: .5rem;
+        }
+    }
+}

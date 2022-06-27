@@ -1,0 +1,22 @@
+.card-yield {
+    background: $color-orange;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    img {
+        width: 100%;
+        max-width: 400px;
+    }
+}

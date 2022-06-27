@@ -1,0 +1,25 @@
+.section-contact {
+    margin-bottom: 3rem;
+
+    ul {
+        list-style: none;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    .contact-social {
+        display: flex;
+        align-items: center;
+        font-size: 1.75rem;
+        gap: .5rem;
+        margin: 1rem 0;
+    }
+}

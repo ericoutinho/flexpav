@@ -1,0 +1,24 @@
+.hero-banner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 350px;
+    overflow: hidden;
+    padding: 2rem;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, $color-text 35%, transparent), url(../assets/flexpav_asfalto.webp);
+
+    &--content {
+        position: relative;
+        color: #fff;
+        width: 50%;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}

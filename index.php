@@ -1,40 +1,23 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Pav - Asfalto frio de alta tecnologia e qualidade</title>
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package WordPress
+ * @subpackage flexpav
+ * @since flexpav 1.0
+ */
 
-    <!-- Primary Meta Tags -->
-    <title>Flex Pav - Asfalto frio de alta tecnologia e qualidade</title>
-    <meta name="title" content="Flex Pav - Asfalto frio de alta tecnologia e qualidade">
-    <meta name="description" content="Conheça o sistema de pavimentação com foco na sustentabilidade, economia e durabilidade que já está presente em todo o território nacional.">
+    get_header();
+?>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://flexpav.com.br">
-    <meta property="og:title" content="Flex Pav - Asfalto frio de alta tecnologia e qualidade">
-    <meta property="og:description" content="Conheça o sistema de pavimentação com foco na sustentabilidade, economia e durabilidade que já está presente em todo o território nacional.">
-    <meta property="og:image" content="./assets/flexpav-meta-image.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://flexpav.com.br">
-    <meta property="twitter:title" content="Flex Pav - Asfalto frio de alta tecnologia e qualidade">
-    <meta property="twitter:description" content="Conheça o sistema de pavimentação com foco na sustentabilidade, economia e durabilidade que já está presente em todo o território nacional.">
-    <meta property="twitter:image" content="./assets/flexpav-meta-image.jpg">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/main.css">
-    <script src="./scripts/main.js" defer></script>
-</head>
-<body>
-    
     <header>
         <div class="container">
             <nav>
-                <img src="./assets/flexpav_logo.webp" loading=lazy alt="Flexpav brand">
+                <img src="<?= get_template_directory_uri() ?>/assets/flexpav_logo.webp" loading=lazy alt="Flexpav brand">
                 <button class="nav-button" aria-label="Menu button"><i class="fas fa-bars"></i></button>
                 <ul class="nav-links">
                     <li><a href="#product">Produto</a></li>
@@ -80,7 +63,7 @@
             <div class="container">
 
                 <div class="package">
-                    <img src="./assets/flexpav_package.webp" loading=lazy alt="Embalagem Flexpav">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/flexpav_package.webp" loading=lazy alt="Embalagem Flexpav">
                     <div>
                         <h2>O que é Flex Pav?</h2>
                         <p>O asfalto <strong>Flex Pav</strong> é um tipo de concreto betuminoso usinado a quente (CBUQ), assim como o asfalto já amplamente utilizado na pavimentação das vias em todo o país.</p>
@@ -152,17 +135,17 @@
                 <h2>Guia de utilização</h2>
                 <div class="guide">
                     <div class="guide-items">
-                        <img src="./assets/flexpav_desagregue.svg" loading=lazy alt="Infográfico da utilização">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/flexpav_desagregue.svg" loading=lazy alt="Infográfico da utilização">
                         <h3>Desegregue</h3>
                         <p>Retire o <strong>Flex Pav</strong> da embalagem e faça a sua desagregação.</p>
                     </div>
                     <div class="guide-items">
-                        <img src="./assets/flexpav_preencha.svg" loading=lazy alt="Infográfico da utilização">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/flexpav_preencha.svg" loading=lazy alt="Infográfico da utilização">
                         <h3>Preencha</h3>
                         <p>Faça o preenchimento de toda a área do pavimento a ser reparada.</p>
                     </div>
                     <div class="guide-items">
-                        <img src="./assets/flexpav_compacte.svg" loading=lazy alt="Infográfico da utilização">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/flexpav_compacte.svg" loading=lazy alt="Infográfico da utilização">
                         <h3>Compacte</h3>
                         <p>Utilize uma compactadora para fazer a compactação do produto.</p>
                     </div>
@@ -208,7 +191,7 @@
                         <h2><i class="fas fa-caret-right"></i> Rendimento</h2>
                         <p>O asfalto <strong>Flex Pav</strong> possui excelente rendimento, sendo possível cobrir até 1 m&sup2; de superfície e 1cm de espessura, <strong>com apenas um pacote de 25Kg</strong> (para um pavimento de qualidade recomenda-se ao menos 5cm de espessura).</p>
                     </div>
-                    <img src="./assets/flexpav_rendimento.svg" loading=lazy alt="Infográfico de redimento">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/flexpav_rendimento.svg" loading=lazy alt="Infográfico de redimento">
                 </div>
 
             </div>
@@ -224,7 +207,7 @@
                         <p>O asfalto <strong>Flax Pav</strong> é um composto à base de polímeros provenientes da borracha de pneus, evitando seu descarte indiscriminado na natureza e promovendo sua reciclagem e sua reutilização de forma apropriada nos pavimentos de todo o país.</p>
                     </div>
                     <figure class="card-sustainability--figure">
-                        <img src="./assets/flexpav_sustentabilidade.webp" loading=lazy alt="Infográfico sustentabilidade">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/flexpav_sustentabilidade.webp" loading=lazy alt="Infográfico sustentabilidade">
                     </figure>
                 </div>
             </div>
@@ -270,9 +253,9 @@
                 <div class="who-row">
                     <div class="who-col">
                         <div class="image-grid">
-                            <img src="./assets/flexpav_projetos_3.webp" alt="">
-                            <img src="./assets/flexpav_projetos_2.webp" alt="">
-                            <img src="./assets/flexpav_projetos_1.webp" alt="">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/flexpav_projetos_3.webp" alt="">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/flexpav_projetos_2.webp" alt="">
+                            <img src="<?= get_template_directory_uri(); ?>/assets/flexpav_projetos_1.webp" alt="">
                         </div>
                     </div>
                     <div class="col">
@@ -295,13 +278,13 @@
                     <div class="servicos-coluna">
                         <h3><i class="fas fa-caret-right"></i> Execução de projetos de pavimentação</h3>
                         <p>Através de profissionais qualificados e experientes, a <strong>Flex Pav</strong> também atua na execução do seu projeto com agilidade, tranquilidade e segurança.</p>
-                        <img src="./assets/flexpav-servicos-pavimentacao.webp" alt="Serviços de pavimentação">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/flexpav-servicos-pavimentacao.webp" alt="Serviços de pavimentação">
                         <small><i class="fas fa-circle-info"></i> Mão de obra qualificada e experiente</small>
                     </div>
                     <div class="servicos-coluna">
                         <h3><i class="fas fa-caret-right"></i> Locação de equipamentos</h3>
                         <p>A <strong>Flex Pav</strong> disponibiliza para locação, máquinas de alta performance voltadas para auxiliar na execução do seu projeto.</p>
-                        <img src="./assets/flexpav-servicos-equipamentos.webp" alt="Locação de equipamentos">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/flexpav-servicos-equipamentos.webp" alt="Locação de equipamentos">
                         <small><i class="fas fa-circle-info"></i> Compactadoras e cortadoras para seu projeto</small>
                     </div>
                 </div>
@@ -342,18 +325,4 @@
 
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <strong>FlexPav</strong> &copy; 2018 - 2022 &bullet; Todos os direitos reservados.
-                </div>
-                <div class="col">
-                    Made with &hearts; by Dumr.
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+<?php get_footer(); ?>
